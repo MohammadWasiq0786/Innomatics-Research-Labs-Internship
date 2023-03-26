@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes taking app</title>
+    <style>
+        body{
+            width: 60%;
+            height: 50%;
+            margin: 10% 20% 25% 38%;
+        }
+        div{
+            background-color:lightcyan;
+            flex-grow: 0;
+        }
+</style>
+</head>
+
+<body>
+    <form action="">
+        <input type="text" name="note" placeholder="Enter a note">
+        <button>Add Note</button>
+    </form>
+    <div>
+        <ul>
+            {% for note in notes%}
+                {% if note == None %}
+                {% else %}
+                    <li>{{ note }}</li>
+                {% endif %}
+        
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+
+</html>
