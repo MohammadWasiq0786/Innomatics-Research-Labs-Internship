@@ -1,0 +1,7 @@
+streamlit
+pandas
+#PIL
+numpy
+seaborn
+matplotlib
+
